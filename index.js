@@ -21,7 +21,6 @@ $(document).ready(function () {
     $("button").on("click", function () {
         console.log("clicked")
         var value = $(this).parent("td").siblings(".startTime").children().val()
-        console.log(test)
         var time = $(this).parent("td").siblings(".startTime").children().attr("id")
         console.log(time)
         localStorage.setItem(time, value)
